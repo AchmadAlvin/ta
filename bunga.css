@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  'Poppins', Arial;
+}
+a{
+    text-decoration: none;
+}
+nav{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 6px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+
+}
+nav .logo{
+    margin: 20px 10px;
+    width: 250px;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #008f48;
+    font-size: 15px;
+    transition: all 0.3s;
+    border: 2px solid #ffffff00;
+    border-radius: 10px;
+    margin: 20 10px;
+    padding: 5px 10px;
+}
+nav ul li a:hover{
+    text-decoration: none;
+    color: #008f48;
+    font-size: 15px;
+    border: 2px solid #16b34f;
+    border-radius: 150px;
+}
+
+/* -------------------------------- */
+
+.bunga{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    padding: 10 0%;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+.bungabg{
+    position: absolute;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    z-index: -2;
+}
+@media (min-aspect-ratio: 16/9){
+    .bungabg{
+    width: 100%;
+    height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9){
+    .bungabg{
+    width: auto;
+    height: 100%;
+    }
+}
+
+/* --------------box------------- */
+
+.kontenbox{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+}
+
+.gambox{
+    margin-top: 70px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.img-box{
+    width: 300px;
+    height: 500px;
+    margin: 10px;
+    border-radius: 10px;
+    background: url(aset/desert-rose-107583.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    transition: box-shadow 0.5s;
+    box-shadow: 0 5px 15px rgba(12, 78, 35, 0.215);
+}
+.img-box2{
+    width: 300px;
+    height: 500px;
+    margin: 10px;
+    border-radius: 10px;
+    background: url(aset/pexels-carlos-pérez-adsuar-antón-1306711.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    transition: box-shadow 0.5s;
+    box-shadow: 0 5px 15px rgba(12, 78, 35, 0.215);
+}
+.img-box3{
+    width: 300px;
+    height: 500px;
+    margin: 10px;
+    border-radius: 10px;
+    background: url(aset/pexels-nitin-dhumal-244796.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    transition: box-shadow 0.5s;
+    box-shadow: 0 5px 15px rgba(12, 78, 35, 0.215);
+}
+.img-box:hover , .img-box2:hover , .img-box3:hover{
+    box-shadow: 0 5px 15px rgba(9, 76, 32, 0.713);
+}
+.img-box h3{
+    color: #ffffff;
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+    opacity: 0;
+    transition: bottom 0.5s, opacity 0.5s;
+    text-shadow: 0 5px 25px #0000009f;
+    font-size: 30px;
+}
+.img-box2 h3{
+    color: #ffffff;
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+    opacity: 0;
+    transition: bottom 0.5s, opacity 0.5s;
+    text-shadow: 0 5px 25px #0000009f;
+    font-size: 30px;
+}
+.img-box3 h3{
+    color: #ffffff;
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+    opacity: 0;
+    transition: bottom 0.5s, opacity 0.5s;
+    text-shadow: 0 5px 25px #0000009f;
+    font-size: 30px;
+}
+
+.img-box:hover h3{
+    opacity: 1;
+    bottom: 25px;
+    text-shadow: 0 5px 25px #000000;
+}
+.img-box2:hover h3{
+    opacity: 1;
+    bottom: 25px;
+    text-shadow: 0 5px 25px #000000;
+}
+.img-box3:hover h3{
+    opacity: 1;
+    bottom: 25px;
+    text-shadow: 0 5px 25px #000000;
+}

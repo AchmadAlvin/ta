@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  'Poppins', Arial;
+}
+a{
+    text-decoration: none;
+}
+nav{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 6px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+
+}
+nav .logo{
+    margin: 20px 10px;
+    width: 250px;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #008f48;
+    font-size: 15px;
+    transition: all 0.3s;
+    border: 2px solid #ffffff00;
+    border-radius: 10px;
+    margin: 20 10px;
+    padding: 5px 10px;
+}
+nav ul li a:hover{
+    text-decoration: none;
+    color: #008f48;
+    font-size: 15px;
+    border: 2px solid #16b34f;
+    border-radius: 150px;
+}
+/* --------------------------- */
+.jenis{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    padding: 10 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.jenisbg{
+    position: absolute;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    z-index: -2;
+}
+.content{
+    text-align: center;
+    text-shadow: 0 5px 25px #ffffff;
+}
+.content h1{
+    font-family: 'Playfair Display', serif;
+    padding-top: 50px;
+    font-size: 50px;
+    color: #34724B;
+    font-weight: 1100;
+}
+@media (min-aspect-ratio: 16/9){
+    .jenisbg{
+    width: 100%;
+    height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9){
+    .jenisbg{
+    width: auto;
+    height: 100%;
+    }
+}
+
+
+/* boxxxx */
+.kontenbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gambox{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.img-box{
+    width: 300px;
+    height: 400px;
+    margin: 30px;
+    border-radius: 15px;
+    background: url(aset/pexels-yaroslav-shuraev-8845420.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    transition: box-shadow 0.5s;
+    box-shadow: 0 5px 45px rgba(12, 78, 35, 0.047);
+    cursor: pointer;
+}
+.img-box2{
+    width: 300px;
+    height: 400px;
+    margin: 30px;
+    border-radius: 15px;
+    background: url(aset/pexels-nitin-dhumal-244796.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    transition: box-shadow 0.5s;
+    box-shadow: 0 5px 45px rgba(12, 78, 35, 0.047);
+    cursor: pointer;
+}
+
+.img-box:hover{
+    box-shadow: 0 5px 25px rgba(15, 110, 5, 0.705);
+    cursor: pointer;
+}
+.img-box2:hover{
+    box-shadow: 0 5px 25px rgba(110, 99, 5, 0.705);
+    cursor: pointer;
+}
+.img-box h3{
+    font-size: 30px;
+    color: #ffffff;
+    position: center;
+    padding-top: 25px;
+    bottom: 0;
+    opacity: 0;
+    transition: bottom 0.5s, opacity 0.5s;
+    text-shadow: 0 5px 25px #0000009f;
+}
+.img-box2 h3{
+    font-size: 30px;
+    color: #ffffff;
+    position: center;
+    padding-top: 25px;
+    bottom: 0;
+    opacity: 0;
+    transition: bottom 0.5s, opacity 0.5s;
+    text-shadow: 0 5px 25px #0000009f;
+}
+.img-box:hover h3{
+    opacity: 1;
+    bottom: 25px;
+    text-shadow: 0 5px 25px #000000;
+}
+.img-box2:hover h3{
+    opacity: 1;
+    bottom: 25px;
+    text-shadow: 0 5px 25px #000000;
+}
